@@ -10,14 +10,21 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:awesome-list.helloWorld"
+    "onCommand:awesome-list.open"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "awesome-list.helloWorld",
-        "title": "Hello World"
+        "command": "awesome-list.open",
+        "title": "Awesome Open",
+        "shortTitle": "ALO"
+      }
+    ],
+    "keybindings":[
+      {
+        "command": "awesome-list.open",
+        "key": "ctrl+shift+t ctrl+w"
       }
     ]
   },
